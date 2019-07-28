@@ -67,6 +67,24 @@ app.use(async (req, res, next) => {
   //     })
   //     .catch(err => console.log("sth went wrong"));
 
+  // const newPerson = new Person({
+  //   name: "6",
+  //   age: 69
+  // });
+  // newPerson
+  //   .save()
+  //   .then(() => {
+  //     Person.findOne({ name: "2" }).then(async function(res) {
+  //       res.friends.push({ _id: newPerson._id });
+  //       await res.save();
+  //     });
+  //   })
+  //   .catch(() => console.log("sth went wrong"));
+
+  // await Person.findOne({ name: 2 })
+  //   .populate("friends", "name")
+  //   .then(res => console.log(res));
+
   next();
 });
 
